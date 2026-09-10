@@ -2,21 +2,21 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-    console.log("method:", req.method);
-    console.log("url:", req.url);
-    console.log("originalUrl:", req.originalUrl);
-    console.log("headers:", req.headers);
-    console.log("query:", req.query);
-    console.log("path:", req.path);
-    console.log("hostname:", req.hostname);
-    console.log("ip:", req.ip);
-    console.log("protocol:", req.protocol);
+    // req means "request", while res means "response", the
+    // response is simply what your sending back
+    // to the roblox server.
+    // you dont need to worry about req,
+    // it contains a bunch of complicated json
+    // that doesnt actually reveal much.
+
+    // INPUT YOUR CODE BELOW HERE 
+
+
+    // this function sends info back to roblox server (in build island)
     res.send("recieved")
 });
 
 app.listen(process.env.PORT || 3000, () => {
-        console.log(
-            "Server is running"
-        );
+        console.log("Server is running");
     }
 );
