@@ -6,3 +6,9 @@ not a static service, or other stuff.
 
 You can use render.com since it is free, and
 it gives you a free webhook.
+
+## DO NOT RENAME INDEX.JS, OR PACKAGE.JSON
+you can delete this read.me.
+if you rename main in package.js, and,  start in package.js
+it may not work, because for some websites, the information
+from package.js is hardwired.
